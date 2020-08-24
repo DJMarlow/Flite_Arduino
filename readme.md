@@ -14,9 +14,9 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-      `"id" : "controller id",`
-      `"version" : "controller firmware version"`
-    `}`
+      "id" : "controller id",
+      "version" : "controller firmware version"
+    }`
  
 * **Error Response:**
 
