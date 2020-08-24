@@ -1,6 +1,6 @@
 **Get Controller Info**
 ----
-  Returns json data about the Flite controller.
+  Returns a json object containing data about the Flite controller.
 
 * **URL**
 
