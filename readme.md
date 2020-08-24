@@ -24,7 +24,7 @@
 `curl http://192.168.1.123/getControllerInfo`
 
 
-**Get Sensor Values BLACK**
+**Get Sensor Values (BLACK Flite Sensor)**
 ----
   Returns a json object representing the current values for a connected Black Flite Sensor.
 
