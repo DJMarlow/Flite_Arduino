@@ -1,3 +1,5 @@
+![Flite](https://octodex.github.com/images/yaktocat.png)
+
 **Get Controller Info**
 ----
   Returns a json object containing data about the Flite controller.
