@@ -13,7 +13,7 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{"id" : "controller id", "version" : "controller firmware version"}`
+    **Content:** `{"id" : "5WfDzd0feF", "version" : "1.0"}`
  
 * **Error Response:**
 
@@ -39,7 +39,7 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{"level" : "current black sensor level", "temperature" : "current black sensor temperature", "pressure" : "current black sensor pressure"}`
+    **Content:** `{"level" : "3.2", "temperature" : "48.5", "pressure" : "8.7"}`
  
 * **Error Response:**
 
@@ -48,3 +48,29 @@
 * **Sample Call:**
 
 `curl http://192.168.1.123/getValuesBlack`
+
+
+**Get Zero Calibration Offset (BLACK Flite Sensor)**
+----
+  Returns a json object representing the stored zero pressure offset for a connected Black Flite Sensor.
+
+* **URL**
+
+  /getZeroPressureBlack
+
+* **Method:**
+
+  `GET`
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{"pressure" : "14.6"}`
+ 
+* **Error Response:**
+
+  * **Code:** 404 NOT FOUND <br />
+
+* **Sample Call:**
+
+`curl http://192.168.1.123/getZeroPressureBlack`
