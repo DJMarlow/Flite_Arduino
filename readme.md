@@ -21,8 +21,4 @@
 
 * **Sample Call:**
 
-  ```javascript
-  {
-GET curl http://192.168.1.123/getControllerInfo
-}
-  ```
+`GET curl http://192.168.1.123/getControllerInfo`
