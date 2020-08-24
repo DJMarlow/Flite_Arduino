@@ -1,4 +1,4 @@
-![Flite](https://octodex.github.com/images/yaktocat.png)
+![Flite](https://github.com/DJMarlow/Flite/blob/master/logo_raw.png)
 
 **Get Controller Info**
 ----
