@@ -1,5 +1,7 @@
 ![Flite](https://github.com/DJMarlow/Flite/blob/master/logo_raw.png)
 
+#Header
+
 **Get Controller Info**
 ----
   Returns a json object containing data about the Flite controller.
