@@ -1,7 +1,7 @@
 #include <FliteSensor.h>
 
 //Create FliteSensor object
-char color[10] = "BLACK";
+char color[] = "BLACK";
 FliteSensor fliteSensor = FliteSensor(
   color,//This is the color of the Flite sensor (BLACK, BLUE, RED, GREEN), BLACK used in this example
   201,//This is the memory location in EEPROM for the low calibration distance
@@ -61,10 +61,6 @@ void loop() {
   Serial.print("Pressure: ");
   Serial.print(pressure);
   Serial.println(" PSI");
-  /*
-  Serial.println("Level: " + String(fliteSensor.getLevel(), 2) + " Gallons");
-  Serial.println("Temperature: " + String(fliteSensor.getTemperature(), 1) + " Deg. F");
-  Serial.println("Pressure: " + String(fliteSensor.getPressure(), 1) + " PSI");
-  */
+
   Serial.println("");
 }
