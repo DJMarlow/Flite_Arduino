@@ -1,4 +1,4 @@
-**Get Controller Info**
+**Get Controller Info Test**
 ----
   Returns a json object containing data about the Flite controller.
 
