@@ -1,7 +1,7 @@
 #include <FliteSensor.h>
 
 //Create FliteSensor object
-char color[10] = "BLACK";
+char color[] = "BLACK";
 FliteSensor fliteSensor = FliteSensor(
   color,//This is the color of the Flite sensor (BLACK, BLUE, RED, GREEN), BLACK used in this example
   201,//This is the memory location in EEPROM for the low calibration distance
