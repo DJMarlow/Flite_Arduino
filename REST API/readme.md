@@ -76,7 +76,7 @@
   `curl http://192.168.1.123/getZeroPressureBlack`
   
   
-  **Get Level Calibration Coefficients (BLACK Flite Sensor)**
+**Get Level Calibration Coefficients (BLACK Flite Sensor)**
 ----
   Returns a json object representing the stored high and low calibration coefficients for a connected Black Flite Sensor.
   Level high and level low represent the gallons when the corrseponding calibration was performed.
