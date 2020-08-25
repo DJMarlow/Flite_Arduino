@@ -1,0 +1,39 @@
+#######################################
+# Syntax Coloring Map
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+FliteSensor	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+startConvert	KEYWORD2
+finishedConvert		KEYWORD2
+getTempC	KEYWORD2
+getTempF	KEYWORD2
+
+beginSensor	KEYWORD2
+getTOFDistance	KEYWORD2
+getLevel	KEYWORD2
+getABPStatus	KEYWORD2
+getABPPressure	KEYWORD2
+getPressure	KEYWORD2
+getTemperature	KEYWORD2
+calibrateLow	KEYWORD2
+setCalibrationDistanceLow	KEYWORD2
+getCalibrationDistanceLow	KEYWORD2
+setCalibrationLevelLow	KEYWORD2
+getCalibrationLevelLow	KEYWORD2
+calibrateHigh	KEYWORD2
+setCalibrationDistanceHigh	KEYWORD2
+getCalibrationDistanceHigh	KEYWORD2
+setCalibrationLevelHigh	KEYWORD2
+getCalibrationLevelHigh	KEYWORD2
+calibrateZeroPSI	KEYWORD2
+setCalibrationZeroPSI	KEYWORD2
+getCalibrationZeroPSI	KEYWORD2
