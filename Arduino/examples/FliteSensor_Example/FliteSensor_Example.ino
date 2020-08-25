@@ -61,10 +61,5 @@ void loop() {
   Serial.print("Pressure: ");
   Serial.print(pressure);
   Serial.println(" PSI");
-  /*
-  Serial.println("Level: " + String(fliteSensor.getLevel(), 2) + " Gallons");
-  Serial.println("Temperature: " + String(fliteSensor.getTemperature(), 1) + " Deg. F");
-  Serial.println("Pressure: " + String(fliteSensor.getPressure(), 1) + " PSI");
-  */
   Serial.println("");
 }
