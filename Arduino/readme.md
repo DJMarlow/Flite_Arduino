@@ -1,10 +1,7 @@
-# `FliteSensor` library
+![Flite](https://github.com/DJMarlow/Flite/blob/master/logo_raw.png)
+
+**Flite Sensor Arduino Library**
+----
+[Arduino Library Documentation](https://gist.github.com/DJMarlow/24cef4e4840ec124156baa3a68032e37)
 
 Arduino library for communication with a Flite Keg Sensor
-
-## Usage
-- Download and copy the `FliteSensor` folder to your Arduino libraries folder (usually `C:\Users\<user_name>\Documents\Arduino\libraries`).
-- Include the library in your Arduino code:
-```
-#include "FliteSensor.h"
-```
