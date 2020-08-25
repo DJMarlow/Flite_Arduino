@@ -2,6 +2,6 @@
 
 **Flite Sensor Arduino Library**
 ----
-[Arduino Library Documentation](https://gist.github.com/DJMarlow/24cef4e4840ec124156baa3a68032e37)
+[Arduino Library Documentation](https://gist.github.com/DJMarlow/266ceec7323dbdeecf3a161dbc32eef4)
 
 Arduino library for communication with a Flite Keg Sensor
