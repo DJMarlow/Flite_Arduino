@@ -3,5 +3,5 @@
 
 **REST API Documentation**
 ----
-[REST API Documentation](https://github.com/DJMarlow/Flite/tree/master/REST%20API)
+[REST API Documentation](https://gist.github.com/DJMarlow/24cef4e4840ec124156baa3a68032e37)
 
