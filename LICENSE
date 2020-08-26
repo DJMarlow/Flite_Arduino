@@ -1,0 +1,31 @@
+    Arduino library for Flite keg sensor
+    
+    **Hardware Documentation
+    Pressure Temperature Sensor I2C Documentation - https://sensing.honeywell.com/i2c-comms-digital-output-pressure-sensors-tn-008201-3-en-final-30may12.pdf
+    Distance Sensor API Documentation - https://www.st.com/en/embedded-software/stsw-img005.html
+    
+    **This library was developed using the below library developed by Adafruit
+    Adafruit VL53L0X Documentation - https://github.com/adafruit/Adafruit_VL53L0X
+    
+    Author: DJMarlow - https://github.com/DJMarlow
+    Date: 2020-8-25
+    
+    MIT License
+    Copyright (c) 2020 Derrick Marlow
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
