@@ -10,6 +10,7 @@
 
     Author: DJMarlow - https://github.com/DJMarlow
     Date: 2020-8-25
+    Version 1.0.0
     
     MIT License
 
