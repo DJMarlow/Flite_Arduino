@@ -45,19 +45,19 @@ void loop() {
   //Display sensor values to console
   
   char level[4];
-  dtostrf(fliteSensor.getLevel(), 1, 4, level);
+  dtostrf(fliteSensor.getLevel(), 1, 1, level);
   Serial.print("Level: ");
   Serial.print(level);
   Serial.println(" Gallons");
 
   char temperature[5];
-  dtostrf(fliteSensor.getTemperature(), 1, 5, temperature);
+  dtostrf(fliteSensor.getTemperature(), 1, 1, temperature);
   Serial.print("Temperature: ");
   Serial.print(temperature);
   Serial.println(" Deg.F");
   
   char pressure[5];
-  dtostrf(fliteSensor.getPressure(), 1, 5, pressure);
+  dtostrf(fliteSensor.getPressure(), 1, 1, pressure);
   Serial.print("Pressure: ");
   Serial.print(pressure);
   Serial.println(" PSI");
