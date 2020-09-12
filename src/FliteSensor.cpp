@@ -62,6 +62,11 @@ float FliteSensor::getLevel(){
   if (l > 5.0){
     l = 5.0;
   }
+  
+  //Ignore levels less than 0.0
+  if (l == 0.0){
+      l = _level;
+  }
 
   _level = l;
   
