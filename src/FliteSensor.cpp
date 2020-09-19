@@ -48,27 +48,28 @@ float FliteSensor::getTOFDistance(){
 //Returns the calculated level
 float FliteSensor::getLevel(){
   float l = 0.0;
+  float d = getTOFDistance();
 
-  //Calculate level based on calibration settings
-  float m = (getCalibrationLevelHigh() - getCalibrationLevelLow()) / (getCalibrationDistanceHigh() - getCalibrationDistanceLow());
-  float b = getCalibrationLevelHigh() - (m * getCalibrationDistanceHigh());
-  l = (m * getTOFDistance()) + b;
+  //If d > 1000 discard reading
+  if (d > 1000){
+    l = _level;
+  } else {
+    //Calculate level based on calibration settings
+    float m = (getCalibrationLevelHigh() - getCalibrationLevelLow()) / (getCalibrationDistanceHigh() - getCalibrationDistanceLow());
+    float b = getCalibrationLevelHigh() - (m * getCalibrationDistanceHigh());
+    l = (m * d) + b;
     
-  //Limit level reading from 0 - 5
-  if (l < 0.0){
-    l = 0.0;
-  }
+    //Limit level reading from 0 - 5
+    if (l < 0.0){
+        l = 0.0;
+    }
 
-  if (l > 5.0){
-    l = 5.0;
-  }
-  
-  //Ignore levels less than 0.0
-  if (l == 0.0){
-      l = _level;
-  }
+    if (l > 5.0){
+        l = 5.0;
+    }
 
-  _level = l;
+    _level = l;
+  }
   
   return l;
 }
