@@ -42,14 +42,16 @@
 #include <Wire.h>
 #include <Adafruit_VL53L0X.h>
 
-class FliteSensor {
-  public:
+class FliteSensor
+{
+public:
     //Sensor current values
     float _level;
     float _psi;
     float _temperature;
 
-    struct raw {
+    struct raw
+    {
         uint8_t status;
         uint16_t press;
         uint16_t temp;
@@ -65,7 +67,7 @@ class FliteSensor {
     int _EEPROM_distanceHigh;
     int _EEPROM_levelHigh;
     int _EEPROM_psiZero;
-    
+
     //Construct keg sensor with individual sensor addresses and memory locations
     FliteSensor(char color[10], int EEPROM_distanceLow, int EEPROM_levelLow, int EEPROM_distanceHigh, int EEPROM_levelHigh, int EEPROM_psiZero);
 
@@ -89,7 +91,7 @@ class FliteSensor {
     void setCalibrationZeroPSI(float p);
     float getCalibrationZeroPSI();
 
-  private:
+private:
     //Sensor addresses
     int _VL530X_address;
     int _HSC_address;
@@ -97,8 +99,7 @@ class FliteSensor {
     //Functions
     float getRawPressure();
     uint8_t getRawPressTemp(const uint8_t slave_addr, struct raw *raw);
-    uint8_t convertPressure(const struct raw raw, float *p, const uint16_t oMin, const uint16_t oMax, const float pMin,const float pMax);
+    uint8_t convertPressure(const struct raw raw, float *p, const uint16_t oMin, const uint16_t oMax, const float pMin, const float pMax);
     uint8_t convertTemp(const struct raw raw, float *t);
-  
 };
 #endif
