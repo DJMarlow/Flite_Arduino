@@ -104,7 +104,7 @@ uint8_t FliteSensor::convertTemp(const struct raw raw, float *t){
 //Get the raw pressure
 float FliteSensor::getRawPressure(){
     struct raw ps;
-    uint8_t status;
+    uint8_t __attribute__((unused)) status;
     float p = -1;
     status = getRawPressTemp(_HSC_address, &ps);
     convertPressure(ps, &p, 0x666, 0x399A, 0.0, 150.0);
@@ -125,7 +125,7 @@ float FliteSensor::getPressure(){
 
 float FliteSensor::getTemperature(){
     struct raw ps;
-    uint8_t status;
+    uint8_t __attribute__((unused)) status;
     float t = -1;
     status = getRawPressTemp(_HSC_address, &ps);
     convertTemp(ps, &t);
