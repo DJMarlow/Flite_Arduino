@@ -37,6 +37,7 @@ FliteSensor::FliteSensor(char color[10], int EEPROM_distanceLow, int EEPROM_leve
 bool FliteSensor::beginSensor()
 {
     lox.begin(_VL530X_address);
+    lox.configSensor(Adafruit_VL53L0X::VL53L0X_SENSE_HIGH_ACCURACY);
     return lox.setAddress(_VL530X_address);
 }
 
