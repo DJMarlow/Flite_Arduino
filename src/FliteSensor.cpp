@@ -1,6 +1,6 @@
 #include "FliteSensor.h"
 
-FliteSensor::FliteSensor(char color[10], int EEPROM_distanceLow, int EEPROM_levelLow, int EEPROM_distanceHigh, int EEPROM_levelHigh, int EEPROM_psiZero)
+FliteSensor::FliteSensor(char color[10], int EEPROM_distanceLow, int EEPROM_levelLow, int EEPROM_distanceHigh, int EEPROM_levelHigh, int EEPROM_psiZero, int EEPROM_tempOffset)
 {
 
     if (strcmp(color, "BLACK") == 0)
@@ -29,6 +29,7 @@ FliteSensor::FliteSensor(char color[10], int EEPROM_distanceLow, int EEPROM_leve
     _EEPROM_distanceHigh = EEPROM_distanceHigh;
     _EEPROM_levelHigh = EEPROM_levelHigh;
     _EEPROM_psiZero = EEPROM_psiZero;
+    _EEPROM_tempOffset = EEPROM_tempOffset;
     _level = 0.0;
     _psi = 0.0;
     _temperature = 0;
@@ -261,6 +262,26 @@ float FliteSensor::getCalibrationLevelHigh()
         l = 5.0;
     }
     return l;
+}
+
+void FliteSensor::setTemperatureOffset(float t)
+{
+    //Store this temperature value in memory
+    EEPROM.put(_EEPROM_tempOffset, t);
+    EEPROM.commit();
+    delay(1000);
+}
+
+float FliteSensor::getTemperatureOffset()
+{
+    float t = 0.0;
+    EEPROM.get(_EEPROM_tempOffset, t);
+    //If t is null initialize temperature at 0
+    if (isnan(t))
+    {
+        t = 0.0;
+    }
+    return t;
 }
 
 void FliteSensor::calibrateZeroPSI()
