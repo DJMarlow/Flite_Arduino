@@ -67,9 +67,10 @@ public:
     int _EEPROM_distanceHigh;
     int _EEPROM_levelHigh;
     int _EEPROM_psiZero;
+    int _EEPROM_tempOffset;
 
     //Construct keg sensor with individual sensor addresses and memory locations
-    FliteSensor(char color[10], int EEPROM_distanceLow, int EEPROM_levelLow, int EEPROM_distanceHigh, int EEPROM_levelHigh, int EEPROM_psiZero);
+    FliteSensor(char color[10], int EEPROM_distanceLow, int EEPROM_levelLow, int EEPROM_distanceHigh, int EEPROM_levelHigh, int EEPROM_psiZero, int EEPROM_tempOffset);
 
     //Public functions
     bool beginSensor();
@@ -87,6 +88,8 @@ public:
     float getCalibrationDistanceHigh();
     void setCalibrationLevelHigh(float l);
     float getCalibrationLevelHigh();
+    void setTemperatureOffset(float t);
+    float getTemperatureOffset();
     void calibrateZeroPSI();
     void setCalibrationZeroPSI(float p);
     float getCalibrationZeroPSI();
