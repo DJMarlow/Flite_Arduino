@@ -155,7 +155,8 @@ float FliteSensor::getTemperature()
     status = getRawPressTemp(_HSC_address, &ps);
     convertTemp(ps, &t);
 
-    t = (t * 9 / 5) + 32;
+    //t = (t * 9 / 5) + 32;
+    t = ((t * 9 / 5) + 32) - getTemperatureOffset();
 
     _temperature = t;
 
