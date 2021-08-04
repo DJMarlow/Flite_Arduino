@@ -9,8 +9,8 @@
     Adafruit VL53L0X Documentation - https://github.com/adafruit/Adafruit_VL53L0X
 
     Author: DJMarlow - https://github.com/DJMarlow
-    Date: 2020-8-25
-    Version 1.0.0
+    Date: 2021-8-4
+    Version 1.2.0
     
     MIT License
 
